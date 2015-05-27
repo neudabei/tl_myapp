@@ -1,3 +1,4 @@
 class User < ActiveRecord::Base
-  has_many :posts, dependent: :destroy
+  has_many :groups
+  has_many :posts, through: :groups
 end
