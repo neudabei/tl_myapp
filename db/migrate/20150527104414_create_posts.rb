@@ -4,7 +4,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :text
 
       t.references :user, index: true, foreign_key: true
-      # t.belongs_to :user, index: true
+      t.belongs_to :user, index: true
       t.timestamps null: false
     end
   end
