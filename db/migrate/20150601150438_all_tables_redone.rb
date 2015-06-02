@@ -2,13 +2,12 @@ class AllTablesRedone < ActiveRecord::Migration
   def change
     create_table :memberships do |t|
       t.integer :user_id
-      t.integer :group_id
+      t.integer :group_id 
     end
 
     create_table :users do |t|
       t.string :username
-      t.string :email
-
+      t.string :email 
     end
 
     create_table :posts do |t|
@@ -20,6 +19,5 @@ class AllTablesRedone < ActiveRecord::Migration
     create_table :groups do |t|
       t.string :name
     end
-
   end
 end
